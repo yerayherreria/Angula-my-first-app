@@ -1,4 +1,11 @@
-<h1>Hola mundo</h1>
+<!--<h1>Hola mundo</h1>
 <app-saludo></app-saludo>
-<app-contador></app-contador>
-<app-listado></app-listado>
+<app-listado [mensaje]="'Hola caracola'"></app-listado>-->
+
+
+
+<app-contador [(value)]="counter" [increment]="increment"></app-contador>
+
+<label for="increment">Increment</label>
+<input name="increment" type="number">
+<h2>Current counter: {{counter}}</h2>

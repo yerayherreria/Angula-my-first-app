@@ -14,4 +14,6 @@ import { ListadoComponent } from './listado/listado.component';
 })
 export class AppComponent {
   title = 'angularFirst';
+  counter:number = 0;
+  increment:number=1;
 }

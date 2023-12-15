@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-listado',
@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent {
   alumnos: String[] = ["Pepito","Susanita","Raquelita"];
+  @Input() mensaje: String = '';
 }
