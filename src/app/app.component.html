@@ -7,5 +7,5 @@
 <app-contador [(value)]="counter" [increment]="increment"></app-contador>
 
 <label for="increment">Increment</label>
-<input name="increment" type="number">
+<input #incrementt type="number" (change)="updateIncrement(incrementt.value)">
 <h2>Current counter: {{counter}}</h2>
